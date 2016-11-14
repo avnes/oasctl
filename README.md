@@ -1,7 +1,6 @@
 # oasctl
-This is an old script used to manage OAS10g 10.1.2, 10.1.3 and 10.1.4 I have
-decided to donate to the open source community. It is unlikely that this script  
-is still in use at many locations, but some users might still be using it.
+This is an old script used to manage OAS10g 10.1.2, 10.1.3 and 10.1.4. 
+I have decided to donate to the open source community. It is unlikely that this script is still in use at any locations, but perhaps some users are still using it?
 
 ## Basics
 This script covers the oas, infra, grid and oai
@@ -25,12 +24,13 @@ oasctl oas stop
 oasctl infra stop
 
 ## Boot script
-Place oas-initd.sh in /etc/init.d
-Create symbolic links from runlevel 3 and 5 to get OAS started at server boot
-and stopped at shutdown:
+* Place oas-initd.sh in /etc/init.d
+* Create symbolic links from runlevel 3 and 5 to get OAS started at server boot and stopped at shutdown:
+```bash
 cd /etc/rc3.d
 ln -s /etc/init.d/oas-initd.sh S99oasctl
 ln -s /etc/init.d/oas-initd.sh K00oasctl
 cd /etc/rc5.d
 ln -s /etc/init.d/oas-initd.sh S99oasctl
 ln -s /etc/init.d/oas-initd.sh K00oasctl
+```
