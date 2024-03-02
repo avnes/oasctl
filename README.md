@@ -1,3 +1,12 @@
+# :warning: Repository not maintained :warning:
+
+Please note that this repository is currently archived, and is no longer being maintained.
+
+- It may contain code, or reference dependencies, with known vulnerabilities
+- It may contain out-dated advice, how-to's or other forms of documentation
+
+The contents might still serve as a source of inspiration, but please review any contents before reusing elsewhere.
+
 # oasctl
 This is an old script used to manage OAS10g 10.1.2, 10.1.3 and 10.1.4. 
 I have decided to donate to the open source community. It is unlikely that this script is still in use at any locations, but perhaps some users are still using it?
